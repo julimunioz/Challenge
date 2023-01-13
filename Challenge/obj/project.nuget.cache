@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FqOWQfzdWbnsnIr1gXL74HzwauW0OBQWbi4gUODZ71pNkGTN1zdoBW/9pn8jEw5P41sPL+kUJKsWyLvuOSlZ5Q==",
+  "dgSpecHash": "pBrS83kNC40U5kihk5I/QsHo77K9DOwQoeQ/AOtW746+7XPgC5yvPshPEEpTDtIvuJovgZltl784A7D6rXQVag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\Challenge.csproj",
+  "projectFilePath": "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\Challenge.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Julian\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Julian\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Julian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.2\\microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",

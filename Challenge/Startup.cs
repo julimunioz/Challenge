@@ -1,4 +1,5 @@
 ﻿using Challenge.Entities;
+using Challenge.Services;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -24,6 +25,8 @@ namespace Challenge
             services.AddSwaggerGen();
 
             services.AddAutoMapper(typeof(Startup));
+
+            services.AddScoped<UserService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

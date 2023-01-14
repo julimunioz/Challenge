@@ -9,6 +9,8 @@ namespace Challenge.Utilities
         public AutoMapper() 
         {
             CreateMap<User, UserDTO>();
+            CreateMap<Goal, GoalsDTO>();
+            CreateMap<Portfolio, PortfolioDTO>();
         }
     }
 }

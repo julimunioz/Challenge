@@ -6,7 +6,7 @@
         public string Firstname { get; set; }
         public string Surname { get; set; }
         public int Advisorid { get; set; }
-        public string NameAdvisor { get; set; }
+        public string FullNameAdvisor { get; set; }
         public DateTime Created { get; set; }
     }
 }

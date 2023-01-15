@@ -10,6 +10,7 @@ namespace Challenge.Utilities
         {
             CreateMap<User, UserDTO>();
             CreateMap<Goal, GoalsDTO>();
+            CreateMap<Goal, GoalDetailDTO>();
             CreateMap<Portfolio, PortfolioDTO>();
         }
     }

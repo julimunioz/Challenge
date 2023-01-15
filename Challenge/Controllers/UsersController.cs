@@ -66,25 +66,46 @@ namespace Challenge.Controllers
         [HttpGet("goals")]
         public async Task<ActionResult<GoalsDTO>> GetGoals(int id)
         {
-
-            var goal = await context.Goals.Include(x => x.Portfolio).FirstOrDefaultAsync(x => x.Userid == id);
+            var goal = await context.Goals.FirstOrDefaultAsync(x => x.Userid == id);
 
             if (goal == null)
             {
                 return BadRequest("Error con el User");
             }
          
-            PortfolioDTO obj = new PortfolioDTO();
-            obj = await goalService.Portfolio(id);
-            
+            PortfolioDTO objPortfolioResponse = new PortfolioDTO();
+            objPortfolioResponse = await goalService.Portfolio(id);
             
             GoalsDTO objGoalsResponse = new GoalsDTO();
             objGoalsResponse = await goalService.Goals(id);
 
-            objGoalsResponse.Portfolios = obj;
+            objGoalsResponse.Portfolios = objPortfolioResponse;
 
             return Ok(objGoalsResponse);
+        }
 
+        [HttpGet("goals/{goalId:int}")]
+        public async Task<ActionResult<GoalDetailDTO>> GetGoalsDetails(int goalId, int id)
+        {
+            var existsGoal = await context.Goals.AnyAsync(x => x.Id == goalId);
+
+            if (!existsGoal)
+            {
+                return BadRequest("This goal doesn't exist");
+            }
+
+            var existsUser = await context.Goals.AnyAsync(x => x.Userid == id);
+        
+            if (!existsUser)
+            {
+                return BadRequest("Error with user/goal");
+            }
+
+            GoalDetailDTO goalDetailDTOResponse = new GoalDetailDTO();
+            goalDetailDTOResponse = await goalService.GoalsDetails(goalId, id);
+
+
+            return Ok(goalDetailDTOResponse);
         }
     }
 }

@@ -41,10 +41,10 @@ namespace Challenge.Services
 
             
             var balance = goalTransactionquotas * fundingvalue * currencyValue;
-            var aportes = goalTransactionAmount.Sum();
+            var contributions = goalTransactionAmount.Sum();
 
             userSummaryDTO.Balance = balance;
-            userSummaryDTO.Aportes = aportes;
+            userSummaryDTO.Contributions = contributions;
             
             return userSummaryDTO;
         }

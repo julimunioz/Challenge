@@ -33,6 +33,7 @@ Logs/
 msbuild.log
 msbuild.err
 msbuild.wrn
+bin/Debug
 
 # Visual Studio
 .vs/

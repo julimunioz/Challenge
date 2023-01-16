@@ -104,7 +104,6 @@ namespace Challenge.Controllers
             GoalDetailDTO goalDetailDTOResponse = new GoalDetailDTO();
             goalDetailDTOResponse = await goalService.GoalsDetails(goalId, id);
 
-
             return Ok(goalDetailDTOResponse);
         }
     }

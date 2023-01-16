@@ -10,8 +10,7 @@ public partial class ChallengeContext : DbContext
     {
     }
 
-    public ChallengeContext(DbContextOptions<ChallengeContext> options)
-        : base(options)
+    public ChallengeContext(DbContextOptions options) : base(options)
     {
     }
 

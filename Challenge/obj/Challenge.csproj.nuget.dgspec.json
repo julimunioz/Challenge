@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\Challenge.csproj": {}
+    "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\Challenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\Challenge.csproj": {
+    "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\Challenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\Challenge.csproj",
+        "projectUniqueName": "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\Challenge.csproj",
         "projectName": "Challenge",
-        "projectPath": "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\Challenge.csproj",
+        "projectPath": "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\Challenge.csproj",
         "packagesPath": "C:\\Users\\Julian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Julian\\source\\repos\\Challenge\\Challenge\\obj\\",
+        "outputPath": "C:\\Users\\Julian\\Desktop\\challenge\\Challenge\\Challenge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"
